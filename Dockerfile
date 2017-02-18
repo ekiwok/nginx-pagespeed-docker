@@ -5,3 +5,4 @@ RUN curl -f -L -sS https://ngxpagespeed.com/install | sed -e 's/\<sudo\>//g' | s
     chmod 775 script && \
     ./script --nginx-version latest
 
+CMD ["/usr/local/nginx/sbin/nginx", "-g", "daemon off;"]
